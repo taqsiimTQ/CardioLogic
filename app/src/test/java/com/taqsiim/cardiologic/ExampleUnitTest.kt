@@ -1,4 +1,4 @@
-package com.example.cardiosense
+package com.example.cardiologic
 
 import org.junit.Test
 

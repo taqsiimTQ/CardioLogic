@@ -16,8 +16,8 @@ class MonitoringNotification(private val context: Context) {
 
     companion object {
         // CHANGED: Added "_v2" to force Android to reset settings!
-        const val CHANNEL_ID = "CardioSense_Monitor_Channel_v2"
-        const val CHANNEL_NAME = "CardioSense Live Monitoring"
+        const val CHANNEL_ID = "CardioLogic_Monitor_Channel_v2"
+        const val CHANNEL_NAME = "CardioLogic Live Monitoring"
         const val NOTIFICATION_ID = 1
     }
 
@@ -51,7 +51,7 @@ class MonitoringNotification(private val context: Context) {
         // 3. Build Notification
         val builder = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_launcher_foreground) // Ensure this exists!
-            .setContentTitle("CardioSense Active")
+            .setContentTitle("CardioLogic Active")
             .setContentText(contentText)
             .setOngoing(true)
             .setContentIntent(pendingIntent)

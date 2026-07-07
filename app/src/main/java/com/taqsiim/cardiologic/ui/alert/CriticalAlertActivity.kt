@@ -28,7 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
 
 /**
  * Full-screen alert activity shown when critical heart rate anomaly is detected.
@@ -70,7 +70,7 @@ class CriticalAlertActivity : ComponentActivity() {
         })
 
         setContent {
-            CardiosenseTheme {
+            CardiologicTheme {
                 CriticalAlertScreen(
                     heartRate = heartRate,
                     message = message,

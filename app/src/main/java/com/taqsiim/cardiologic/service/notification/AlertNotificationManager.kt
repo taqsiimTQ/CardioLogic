@@ -1,4 +1,4 @@
-package com.taqsiim.cardiosense.service.notification
+package com.taqsiim.cardiologic.service.notification
 
 // Push notification management
 class AlertNotificationManager {

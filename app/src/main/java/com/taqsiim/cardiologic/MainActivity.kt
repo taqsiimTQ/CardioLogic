@@ -12,7 +12,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.taqsiim.cardiologic.service.monitoring.MonitoringService
 import com.taqsiim.cardiologic.ui.onboarding.PermissionManager
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
 import com.taqsiim.cardiologic.ui.navigation.AppScreen
 import com.taqsiim.cardiologic.ui.navigation.NavGraph
 
@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
         }
 
         setContent {
-            CardiosenseTheme {
+            CardiologicTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     NavGraph(
                         modifier = Modifier.padding(innerPadding),

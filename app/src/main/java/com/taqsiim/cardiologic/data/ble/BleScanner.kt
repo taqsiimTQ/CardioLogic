@@ -1,4 +1,4 @@
-package com.taqsiim.cardiosense.data.ble
+package com.taqsiim.cardiologic.data.ble
 
 import android.Manifest
 import android.annotation.SuppressLint

@@ -19,20 +19,20 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.taqsiim.cardiologic.ui.theme.cardioSenseColors
+import com.taqsiim.cardiologic.ui.theme.cardioLogicColors
 
 @Composable
 fun ConnectionStatusCard(isConnected: Boolean) {
     val containerColor = if (isConnected) {
         MaterialTheme.colorScheme.surface
     } else {
-        MaterialTheme.cardioSenseColors.errorRed.copy(alpha = 0.1f)
+        MaterialTheme.cardioLogicColors.errorRed.copy(alpha = 0.1f)
     }
 
     val contentColor = if (isConnected) {
-        MaterialTheme.cardioSenseColors.successGreen
+        MaterialTheme.cardioLogicColors.successGreen
     } else {
-        MaterialTheme.cardioSenseColors.errorRed
+        MaterialTheme.cardioLogicColors.errorRed
     }
 
     val icon = if (isConnected) Icons.Default.CloudDone else Icons.Default.Error
@@ -56,7 +56,7 @@ fun ConnectionStatusCard(isConnected: Boolean) {
                 text = statusText,
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.SemiBold,
-                color = if (!isConnected) MaterialTheme.cardioSenseColors.errorRed else MaterialTheme.colorScheme.onSurface
+                color = if (!isConnected) MaterialTheme.cardioLogicColors.errorRed else MaterialTheme.colorScheme.onSurface
             )
 
             if (isConnected) {
@@ -64,7 +64,7 @@ fun ConnectionStatusCard(isConnected: Boolean) {
                 Icon(
                     imageVector = Icons.Default.CheckCircle,
                     contentDescription = null,
-                    tint = MaterialTheme.cardioSenseColors.successGreen
+                    tint = MaterialTheme.cardioLogicColors.successGreen
                 )
             }
         }

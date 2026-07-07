@@ -1,7 +1,7 @@
-# CardioSense Color Theme System
+# CardioLogic Color Theme System
 
 ## Overview
-All colors in the CardioSense app are now managed through a centralized theming system that supports both light and dark modes.
+All colors in the CardioLogic app are now managed through a centralized theming system that supports both light and dark modes.
 
 ## Color Structure
 
@@ -20,28 +20,28 @@ Each color has a light (40) and dark (80) variant:
 - Dark theme uses softer, lighter colors for better readability
 
 ### Custom Theme Extension (ThemeExtensions.kt)
-Provides `MaterialTheme.cardioSenseColors` extension that automatically switches between light/dark variants based on system theme.
+Provides `MaterialTheme.cardioLogicColors` extension that automatically switches between light/dark variants based on system theme.
 
 ## Usage
 
 ### In Composables
 ```kotlin
 // Success/Status indicator
-tint = MaterialTheme.cardioSenseColors.successGreen
+tint = MaterialTheme.cardioLogicColors.successGreen
 
 // ECG display
-background = MaterialTheme.cardioSenseColors.ecgBackground
-color = MaterialTheme.cardioSenseColors.ecgLineGreen
+background = MaterialTheme.cardioLogicColors.ecgBackground
+color = MaterialTheme.cardioLogicColors.ecgLineGreen
 
 // Scanner animation
-color = MaterialTheme.cardioSenseColors.scannerPulseOuter
+color = MaterialTheme.cardioLogicColors.scannerPulseOuter
 
 // Error/Alert button
-containerColor = MaterialTheme.cardioSenseColors.errorRed
+containerColor = MaterialTheme.cardioLogicColors.errorRed
 
 // Heart illustration
-tint = MaterialTheme.cardioSenseColors.heartRed
-background = MaterialTheme.cardioSenseColors.heartRedBackground
+tint = MaterialTheme.cardioLogicColors.heartRed
+background = MaterialTheme.cardioLogicColors.heartRedBackground
 ```
 
 ## Screens with Previews

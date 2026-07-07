@@ -9,7 +9,7 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
 @Immutable
-data class CardioSenseColors(
+data class CardioLogicColors(
     val successGreen: Color,
     val warningYellow: Color,
     val errorRed: Color,
@@ -25,7 +25,7 @@ data class CardioSenseColors(
     val heartRedBackground: Color
 )
 
-private val LightCardioSenseColors = CardioSenseColors(
+private val LightCardioLogicColors = CardioLogicColors(
     successGreen = SuccessGreen,
     warningYellow = WarningYellow,
     errorRed = ErrorRed,
@@ -41,7 +41,7 @@ private val LightCardioSenseColors = CardioSenseColors(
     heartRedBackground = HeartRedBackground
 )
 
-private val DarkCardioSenseColors = CardioSenseColors(
+private val DarkCardioLogicColors = CardioLogicColors(
     successGreen = SuccessGreenDark,
     warningYellow = WarningYellowDark,
     errorRed = ErrorRedDark,
@@ -57,9 +57,9 @@ private val DarkCardioSenseColors = CardioSenseColors(
     heartRedBackground = HeartRedBackgroundDark
 )
 
-val LocalCardioSenseColors = staticCompositionLocalOf { LightCardioSenseColors }
+val LocalCardioLogicColors = staticCompositionLocalOf { LightCardioLogicColors }
 
-val MaterialTheme.cardioSenseColors: CardioSenseColors
+val MaterialTheme.cardioLogicColors: CardioLogicColors
     @Composable
     @ReadOnlyComposable
-    get() = if (isSystemInDarkTheme()) DarkCardioSenseColors else LightCardioSenseColors
+    get() = if (isSystemInDarkTheme()) DarkCardioLogicColors else LightCardioLogicColors

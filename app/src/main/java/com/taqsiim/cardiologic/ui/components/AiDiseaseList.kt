@@ -21,7 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.taqsiim.cardiologic.ui.theme.cardioSenseColors
+import com.taqsiim.cardiologic.ui.theme.cardioLogicColors
 
 @Composable
 fun AiDiseaseList(
@@ -58,9 +58,9 @@ private fun DiseaseItem(diseaseName: String) {
     val isNormal = diseaseName.contains("Normal", ignoreCase = true)
     
     val color = if (isNormal) {
-        MaterialTheme.cardioSenseColors.successGreen
+        MaterialTheme.cardioLogicColors.successGreen
     } else {
-        MaterialTheme.cardioSenseColors.errorRed
+        MaterialTheme.cardioLogicColors.errorRed
     }
 
     val icon = if (isNormal) Icons.Default.CheckCircle else Icons.Default.Warning

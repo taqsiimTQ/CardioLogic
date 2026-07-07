@@ -39,7 +39,7 @@ import com.taqsiim.cardiologic.ui.onboarding.PermissionsScreen
 import com.taqsiim.cardiologic.ui.profile.ProfileScreen
 import com.taqsiim.cardiologic.ui.scanner.ScannerScreen
 import com.taqsiim.cardiologic.ui.settings.SettingsScreen
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
 import kotlinx.coroutines.launch
 
 // 1. Make AppScreen public so MainActivity can see it
@@ -147,7 +147,7 @@ fun NavGraph(
 @Preview(showBackground = true)
 @Composable
 fun NavGraphPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         NavGraph(modifier = Modifier.fillMaxSize())
     }
 }
@@ -155,7 +155,7 @@ fun NavGraphPreview() {
 @Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun NavGraphDarkPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         NavGraph(modifier = Modifier.fillMaxSize())
     }
 }

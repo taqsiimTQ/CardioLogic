@@ -29,9 +29,9 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
 // Ensure you have this import for the colors we defined earlier
-// import com.example.cardiosense.ui.theme.cardioSenseColors
+// import com.example.cardiologic.ui.theme.cardioLogicColors
 
 @Composable
 fun PermissionsScreen(onPermissionsGranted: () -> Unit) {
@@ -112,7 +112,7 @@ fun PermissionsScreen(onPermissionsGranted: () -> Unit) {
         )
 
         Text(
-            text = "To monitor your heart continuously, CardioSense needs access to Bluetooth, Location, and Background running.",
+            text = "To monitor your heart continuously, CardioLogic needs access to Bluetooth, Location, and Background running.",
             style = MaterialTheme.typography.bodyMedium,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -221,7 +221,7 @@ private fun PhoneHeartIllustration(modifier: Modifier = Modifier) {
             Icon(
                 imageVector = Icons.Default.Favorite,
                 contentDescription = null,
-                tint = Color.Red, // Use MaterialTheme.cardioSenseColors.heartRed if available
+                tint = Color.Red, // Use MaterialTheme.cardioLogicColors.heartRed if available
                 modifier = Modifier.size(64.dp)
             )
         }
@@ -278,7 +278,7 @@ private fun PermissionStatusRow(
 @Preview(showBackground = true)
 @Composable
 fun PermissionsPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         PermissionsScreen(onPermissionsGranted = {})
     }
 }

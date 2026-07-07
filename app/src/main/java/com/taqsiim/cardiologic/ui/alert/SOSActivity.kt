@@ -16,7 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
 
 /**
  * SOS Activity - placeholder for future emergency contact functionality
@@ -29,7 +29,7 @@ class SOSActivity : ComponentActivity() {
         val heartRate = intent.getIntExtra("heartRate", 0)
 
         setContent {
-            CardiosenseTheme {
+            CardiologicTheme {
                 SOSScreen(
                     heartRate = heartRate,
                     onClose = { finish() }

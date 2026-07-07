@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "cardiosense"
+rootProject.name = "cardiologic"
 include(":app")

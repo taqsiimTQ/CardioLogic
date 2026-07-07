@@ -79,7 +79,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun CardiosenseTheme(
+fun CardiologicTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = false, // Disabled for consistent medical UI

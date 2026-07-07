@@ -48,8 +48,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
-import com.taqsiim.cardiologic.ui.theme.cardioSenseColors
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
+import com.taqsiim.cardiologic.ui.theme.cardioLogicColors
 import com.taqsiim.cardiologic.ui.scanner.ScannerViewModel
 import kotlin.math.max
 
@@ -110,7 +110,7 @@ fun ScannerScreen(
 
             if (uiState.devices.isEmpty()) {
                 Text(
-                    text = if (uiState.isScanning) "Searching for CardioSense devices..." else "No devices found. Pull to refresh.",
+                    text = if (uiState.isScanning) "Searching for CardioLogic devices..." else "No devices found. Pull to refresh.",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(vertical = 16.dp)
@@ -148,7 +148,7 @@ private fun RadarAnimation(modifier: Modifier = Modifier, isScanning: Boolean = 
         label = "pulseAlpha"
     )
 
-    val scannerCenterColor = MaterialTheme.cardioSenseColors.scannerCenter
+    val scannerCenterColor = MaterialTheme.cardioLogicColors.scannerCenter
 
     Box(modifier = modifier, contentAlignment = Alignment.Center) {
         Canvas(modifier = Modifier.size(200.dp)) {
@@ -227,8 +227,8 @@ private fun SignalStrengthBars(rssi: Int) {
                     .width(6.dp)
                     .height(height.dp)
                     .background(
-                        if (i <= level) MaterialTheme.cardioSenseColors.signalStrengthGood
-                        else MaterialTheme.cardioSenseColors.signalStrengthPoor
+                        if (i <= level) MaterialTheme.cardioLogicColors.signalStrengthGood
+                        else MaterialTheme.cardioLogicColors.signalStrengthPoor
                     )
                     .alpha(if (i <= level) 1f else 0.6f)
             )
@@ -240,7 +240,7 @@ private fun SignalStrengthBars(rssi: Int) {
 @Preview(showBackground = true)
 @Composable
 fun ScannerScreenPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         ScannerScreen()
     }
 }
@@ -248,7 +248,7 @@ fun ScannerScreenPreview() {
 @Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun ScannerScreenDarkPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         ScannerScreen()
     }
 }

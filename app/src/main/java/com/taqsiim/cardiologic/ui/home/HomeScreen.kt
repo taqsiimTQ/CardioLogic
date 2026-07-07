@@ -17,7 +17,7 @@ import com.taqsiim.cardiologic.ui.components.AiDiseaseList
 import com.taqsiim.cardiologic.ui.components.ConnectionStatusCard
 import com.taqsiim.cardiologic.ui.components.EcgWaveformCard
 import com.taqsiim.cardiologic.ui.components.VitalCard
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
 
 // Main Dashboard screen
 @Composable
@@ -72,7 +72,7 @@ fun HomeScreen(
 @Preview(showBackground = true)
 @Composable
 fun HomeScreenPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         HomeScreen()
     }
 }
@@ -80,7 +80,7 @@ fun HomeScreenPreview() {
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun HomeScreenDarkPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         HomeScreen()
     }
 }

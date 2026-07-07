@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.taqsiim.cardiologic.ui.theme.cardioSenseColors
+import com.taqsiim.cardiologic.ui.theme.cardioLogicColors
 import kotlin.math.sin
 
 @Composable
@@ -56,8 +56,8 @@ fun LiveEcgGraph(modifier: Modifier = Modifier) {
         label = "shift"
     )
 
-    val ecgBackgroundColor = MaterialTheme.cardioSenseColors.ecgBackground
-    val ecgLineColor = MaterialTheme.cardioSenseColors.ecgLineGreen
+    val ecgBackgroundColor = MaterialTheme.cardioLogicColors.ecgBackground
+    val ecgLineColor = MaterialTheme.cardioLogicColors.ecgLineGreen
 
     Canvas(modifier = modifier.background(ecgBackgroundColor)) {
         val path = Path()

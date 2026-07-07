@@ -19,7 +19,7 @@ import com.taqsiim.cardiologic.ui.alert.CriticalAlertActivity
 class CriticalAlertNotification(private val context: Context) {
 
     companion object {
-        const val CHANNEL_ID = "CardioSense_Critical_Alert_Channel"
+        const val CHANNEL_ID = "CardioLogic_Critical_Alert_Channel"
         const val CHANNEL_NAME = "Critical Heart Rate Alerts"
         const val NOTIFICATION_ID = 999 // High priority ID
     }

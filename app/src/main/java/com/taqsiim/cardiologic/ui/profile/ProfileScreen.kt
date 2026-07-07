@@ -28,8 +28,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.taqsiim.cardiologic.ui.theme.CardiosenseTheme
-import com.taqsiim.cardiologic.ui.theme.cardioSenseColors
+import com.taqsiim.cardiologic.ui.theme.CardiologicTheme
+import com.taqsiim.cardiologic.ui.theme.cardioLogicColors
 
 @Composable
 fun ProfileScreen() {
@@ -96,7 +96,7 @@ fun ProfileScreen() {
                     Icon(
                         imageVector = Icons.Default.BatteryFull,
                         contentDescription = null,
-                        tint = MaterialTheme.cardioSenseColors.successGreen
+                        tint = MaterialTheme.cardioLogicColors.successGreen
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     Text(
@@ -130,7 +130,7 @@ fun ProfileScreen() {
 @Preview(showBackground = true)
 @Composable
 fun ProfileScreenPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         ProfileScreen()
     }
 }
@@ -138,7 +138,7 @@ fun ProfileScreenPreview() {
 @Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun ProfileScreenDarkPreview() {
-    CardiosenseTheme {
+    CardiologicTheme {
         ProfileScreen()
     }
 }
